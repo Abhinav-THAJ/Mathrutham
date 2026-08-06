@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
 
-const Facebook = (props: React.SVGProps<SVGSVGElement>) => (
+const Facebook = ({ size = 24, ...props }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={size}
+    height={size}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -18,11 +18,11 @@ const Facebook = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
+const Instagram = ({ size = 24, ...props }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={size}
+    height={size}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -37,11 +37,11 @@ const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const Twitter = (props: React.SVGProps<SVGSVGElement>) => (
+const Twitter = ({ size = 24, ...props }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={size}
+    height={size}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
