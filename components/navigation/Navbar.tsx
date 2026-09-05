@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -36,13 +37,15 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 z-50">
-          <div className="w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-heading font-bold text-xl shadow-lg">
-            P
-          </div>
-          <span className="font-heading font-semibold text-2xl tracking-wide text-foreground">
-            Punarjani
-          </span>
+        <Link href="/" className="flex items-center z-50">
+          <Image
+            src="/logo.png"
+            alt="Mathrutham Logo"
+            width={260}
+            height={96}
+            className="h-24 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

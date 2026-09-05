@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Facebook = ({ size = 24, ...props }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
@@ -61,14 +62,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: About */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-luxury-gold text-[#1A2E1A] rounded-full flex items-center justify-center font-heading font-bold text-xl">
-                P
-              </div>
-              <span className="font-heading font-semibold text-2xl tracking-wide text-luxury-gold">
-                Punarjani
-              </span>
-            </div>
+            <Link href="/" className="flex items-center mb-6">
+              <Image
+                src="/logo.png"
+                alt="Mathrutham Logo"
+                width={260}
+                height={96}
+                className="h-24 w-auto object-contain brightness-200"
+              />
+            </Link>
             <p className="text-[#F8F4EC]/80 mb-6 font-light leading-relaxed">
               Authentic Ayurvedic healing through specialized postnatal care, prenatal wellness, and rejuvenation therapies. Experience luxury wellness rooted in ancient wisdom.
             </p>

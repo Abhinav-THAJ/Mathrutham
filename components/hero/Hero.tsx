@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-accent pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-accent pt-36">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/50 rounded-l-[100px] -z-10" />
 
@@ -19,9 +19,6 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 uppercase tracking-wider">
-            Authentic Ayurveda
-          </span>
           <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-[#1A2E1A]">
             Authentic Ayurvedic Care for Mothers, Women & Families
           </h1>

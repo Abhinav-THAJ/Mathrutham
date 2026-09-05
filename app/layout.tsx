@@ -18,6 +18,11 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Punarjani Matrutwam | Luxury Ayurvedic Wellness Centre",
   description: "Authentic Ayurvedic healing through specialized postnatal care, prenatal wellness, rejuvenation therapies, Panchakarma, and holistic treatments.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
