@@ -35,8 +35,13 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
   
-  /* Custom Luxury Colors */
-  --color-natural-brown: var(--natural-brown);
+  /* Logo Brand Theme Colors */
+  --color-brand-mauve: var(--brand-mauve);
+  --color-brand-mauve-dark: var(--brand-mauve-dark);
+  --color-brand-mauve-light: var(--brand-mauve-light);
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-dark: var(--brand-green-dark);
+  --color-brand-green-light: var(--brand-green-light);
   --color-luxury-gold: var(--luxury-gold);
   
   --radius-sm: calc(var(--radius) * 0.6);
@@ -49,49 +54,63 @@
 }
 
 :root {
-  --background: #FFFDF9;
-  --foreground: #2d3748;
-  --card: #FFFDF9;
-  --card-foreground: #2d3748;
-  --popover: #FFFDF9;
-  --popover-foreground: #2d3748;
-  --primary: #4B7A3C;
+  --background: #FCFAFD;
+  --foreground: #2B1230;
+  --card: #FFFFFF;
+  --card-foreground: #2B1230;
+  --popover: #FFFFFF;
+  --popover-foreground: #2B1230;
+  --primary: #8E5894;
   --primary-foreground: #FFFFFF;
-  --secondary: #DCE8D5;
-  --secondary-foreground: #2d3748;
-  --muted: #F8F4EC;
-  --muted-foreground: #718096;
-  --accent: #F8F4EC;
-  --accent-foreground: #2d3748;
+  --secondary: #EDF8F1;
+  --secondary-foreground: #0A8D41;
+  --muted: #F7EFF9;
+  --muted-foreground: #765C79;
+  --accent: #FAF4FB;
+  --accent-foreground: #2B1230;
   --destructive: #ef4444;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #C7A75B;
+  --border: #EBDDEE;
+  --input: #EBDDEE;
+  --ring: #8E5894;
   --radius: 0.75rem;
   
-  --natural-brown: #8B6B4E;
-  --luxury-gold: #C7A75B;
+  /* Brand specific colors directly sampled from logo */
+  --brand-mauve: #8E5894;
+  --brand-mauve-dark: #2B1230;
+  --brand-mauve-light: #FAF4FB;
+  --brand-green: #0A8D41;
+  --brand-green-dark: #075E2B;
+  --brand-green-light: #EDF8F1;
+  --luxury-gold: #0A8D41;
 }
 
 .dark {
-  --background: #1a202c;
-  --foreground: #FFFDF9;
-  --card: #2d3748;
-  --card-foreground: #FFFDF9;
-  --popover: #1a202c;
-  --popover-foreground: #FFFDF9;
-  --primary: #7EA16B;
-  --primary-foreground: #1a202c;
-  --secondary: #2d3748;
-  --secondary-foreground: #FFFDF9;
-  --muted: #2d3748;
-  --muted-foreground: #a0aec0;
-  --accent: #2d3748;
-  --accent-foreground: #FFFDF9;
+  --background: #180B1B;
+  --foreground: #FCFAFD;
+  --card: #25102A;
+  --card-foreground: #FCFAFD;
+  --popover: #180B1B;
+  --popover-foreground: #FCFAFD;
+  --primary: #A66FA9;
+  --primary-foreground: #FFFFFF;
+  --secondary: #25102A;
+  --secondary-foreground: #FCFAFD;
+  --muted: #25102A;
+  --muted-foreground: #B59EBA;
+  --accent: #25102A;
+  --accent-foreground: #FCFAFD;
   --destructive: #ef4444;
-  --border: #4a5568;
-  --input: #4a5568;
-  --ring: #C7A75B;
+  --border: #3D1C44;
+  --input: #3D1C44;
+  --ring: #A66FA9;
+
+  --brand-mauve: #A66FA9;
+  --brand-mauve-dark: #180B1B;
+  --brand-mauve-light: #25102A;
+  --brand-green: #10A04C;
+  --brand-green-dark: #0A8D41;
+  --brand-green-light: #1D3024;
+  --luxury-gold: #10A04C;
 }
 
 @layer base {

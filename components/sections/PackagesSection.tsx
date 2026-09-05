@@ -34,10 +34,10 @@ export function PackagesSection() {
   return (
     <section className="py-24 bg-accent text-center relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <span className="text-luxury-gold font-medium uppercase tracking-widest text-sm mb-4 block">
+        <span className="text-brand-green font-semibold uppercase tracking-widest text-sm mb-4 block">
           Wellness Plans
         </span>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold text-[#1A2E1A] mb-12">
+        <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-12">
           Curated Packages
         </h2>
         
@@ -50,11 +50,11 @@ export function PackagesSection() {
               transition={{ delay: idx * 0.15 }}
               viewport={{ once: true, margin: "-50px" }}
               className={`relative bg-white rounded-3xl overflow-hidden shadow-lg border ${
-                pkg.popular ? "border-primary shadow-xl scale-105 z-10" : "border-primary/10 mt-4 md:mt-8"
+                pkg.popular ? "border-primary shadow-xl shadow-primary/10 scale-105 z-10" : "border-primary/15 mt-4 md:mt-8"
               }`}
             >
               {pkg.popular && (
-                <div className="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-4 py-1 rounded-bl-xl z-20 uppercase tracking-wider">
+                <div className="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl z-20 uppercase tracking-wider">
                   Most Popular
                 </div>
               )}
@@ -66,10 +66,10 @@ export function PackagesSection() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2B1230]/70 to-transparent" />
                 <div className="absolute bottom-4 left-6 text-white">
                   <h3 className="font-heading text-2xl font-bold">{pkg.title}</h3>
-                  <div className="text-xl font-medium mt-1">{pkg.price}</div>
+                  <div className="text-xl font-medium mt-1 text-secondary">{pkg.price}</div>
                 </div>
               </div>
               
@@ -81,10 +81,10 @@ export function PackagesSection() {
                 <ul className="space-y-4 mb-8">
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="mt-1 bg-primary/10 p-1 rounded-full text-primary">
+                      <div className="mt-1 bg-secondary p-1 rounded-full text-brand-green">
                         <Check size={14} />
                       </div>
-                      <span className="text-sm font-medium">{feature}</span>
+                      <span className="text-sm font-medium text-foreground/90">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -93,8 +93,8 @@ export function PackagesSection() {
                   href="/contact"
                   className={`block w-full py-4 rounded-full font-bold text-center transition-all duration-300 ${
                     pkg.popular 
-                      ? "bg-primary text-white shadow-md hover:shadow-lg hover:scale-[1.02]" 
-                      : "bg-secondary text-primary hover:bg-primary/20"
+                      ? "bg-primary text-white shadow-md shadow-primary/25 hover:shadow-lg hover:scale-[1.02] hover:bg-primary/90" 
+                      : "bg-secondary text-brand-green hover:bg-brand-green/15"
                   }`}
                 >
                   Book Now

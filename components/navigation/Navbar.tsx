@@ -72,7 +72,7 @@ export function Navbar() {
             <span className="relative z-10 flex items-center gap-2">
               Book Consultation
             </span>
-            <div className="absolute inset-0 z-0 h-full w-full bg-gradient-to-r from-primary to-[#7EA16B] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="absolute inset-0 z-0 h-full w-full bg-gradient-to-r from-primary to-brand-green opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </Link>
         </div>
 

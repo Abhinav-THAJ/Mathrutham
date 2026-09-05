@@ -37,9 +37,9 @@ export function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="absolute -bottom-10 -right-10 md:bottom-10 md:-right-10 bg-white/90 backdrop-blur-md p-8 rounded-3xl shadow-xl max-w-sm border border-white/20"
+              className="absolute -bottom-10 -right-10 md:bottom-10 md:-right-10 bg-white/95 backdrop-blur-md p-8 rounded-3xl shadow-xl max-w-sm border border-border"
             >
-              <h3 className="font-heading text-2xl font-bold text-[#1A2E1A] mb-3">
+              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
                 Legacy of Healing
               </h3>
               <p className="text-foreground/70 text-sm leading-relaxed">
@@ -56,10 +56,10 @@ export function AboutPreview() {
             transition={{ duration: 1 }}
             className="lg:pl-10 mt-16 lg:mt-0"
           >
-            <span className="text-luxury-gold font-medium uppercase tracking-widest text-sm mb-4 block">
+            <span className="text-brand-green font-semibold uppercase tracking-widest text-sm mb-4 block">
               Our Story
             </span>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-[#1A2E1A] mb-8 leading-tight">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
               A Sanctuary for Mother & Child Wellness
             </h2>
             <div className="space-y-6 text-foreground/80 leading-relaxed text-lg mb-10">
@@ -73,7 +73,7 @@ export function AboutPreview() {
 
             <Link
               href="/about"
-              className="group inline-flex items-center gap-3 text-[#1A2E1A] font-semibold text-lg hover:text-primary transition-colors"
+              className="group inline-flex items-center gap-3 text-foreground font-semibold text-lg hover:text-primary transition-colors"
             >
               <span className="border-b-2 border-primary pb-1">Discover Our Journey</span>
               <ArrowRight className="transition-transform group-hover:translate-x-2 text-primary" />

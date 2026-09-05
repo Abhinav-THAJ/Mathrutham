@@ -14,13 +14,13 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="relative pt-32 pb-20 bg-primary/5">
+      <section className="relative pt-32 pb-20 bg-accent">
         <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl">
-          <span className="text-luxury-gold font-medium uppercase tracking-widest text-sm mb-4 block">Our Expertise</span>
-          <h1 className="font-heading text-5xl md:text-6xl font-bold mb-6 text-[#1A2E1A]">
+          <span className="text-brand-green font-semibold uppercase tracking-widest text-sm mb-4 block">Our Expertise</span>
+          <h1 className="font-heading text-5xl md:text-6xl font-bold mb-6 text-foreground">
             Holistic Healing Services
           </h1>
-          <p className="text-foreground/70 text-lg leading-relaxed">
+          <p className="text-foreground/75 text-lg leading-relaxed">
             Discover our comprehensive range of authentic Ayurvedic therapies tailored for your complete well-being.
           </p>
         </div>
@@ -29,14 +29,16 @@ export default function ServicesPage() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((svc) => (
-              <div key={svc.id} id={svc.id} className="bg-white border border-primary/10 rounded-3xl p-8 hover:shadow-xl transition-shadow duration-300 group">
-                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+            {services.map((svc, idx) => (
+              <div key={svc.id} id={svc.id} className="bg-white border border-primary/15 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${
+                  idx % 2 === 0 ? "bg-secondary text-brand-green" : "bg-[#F7EFF9] text-primary"
+                }`}>
                   <svc.icon size={32} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-heading text-2xl font-bold text-[#1A2E1A] mb-4">{svc.title}</h3>
+                <h3 className="font-heading text-2xl font-bold text-foreground mb-4">{svc.title}</h3>
                 <p className="text-foreground/70 mb-6">{svc.desc}</p>
-                <a href="/contact" className="text-luxury-gold font-semibold uppercase text-sm tracking-wider hover:text-primary transition-colors">
+                <a href="/contact" className="text-brand-green font-semibold uppercase text-sm tracking-wider hover:text-primary transition-colors inline-flex items-center gap-1">
                   Learn More &rarr;
                 </a>
               </div>

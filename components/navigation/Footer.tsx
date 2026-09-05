@@ -57,31 +57,31 @@ const Twitter = ({ size = 24, ...props }: { size?: number } & React.SVGProps<SVG
 
 export function Footer() {
   return (
-    <footer className="bg-[#1A2E1A] text-[#F8F4EC] pt-20 pb-10">
+    <footer className="bg-[#1F0D24] text-white pt-20 pb-10 border-t border-primary/20">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: About */}
           <div>
-            <Link href="/" className="flex items-center mb-6">
+            <Link href="/" className="inline-block mb-6 bg-white rounded-2xl p-3 shadow-md hover:opacity-95 transition-opacity">
               <Image
                 src="/logo.png"
-                alt="Mathrutham Logo"
-                width={260}
-                height={96}
-                className="h-24 w-auto object-contain brightness-200"
+                alt="Punarjani Matrutwam Logo"
+                width={240}
+                height={88}
+                className="h-16 w-auto object-contain"
               />
             </Link>
-            <p className="text-[#F8F4EC]/80 mb-6 font-light leading-relaxed">
+            <p className="text-white/80 mb-6 font-light leading-relaxed">
               Authentic Ayurvedic healing through specialized postnatal care, prenatal wellness, and rejuvenation therapies. Experience luxury wellness rooted in ancient wisdom.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-luxury-gold hover:text-[#1A2E1A] transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-luxury-gold hover:text-[#1A2E1A] transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-luxury-gold hover:text-[#1A2E1A] transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" aria-label="Twitter">
                 <Twitter size={18} />
               </a>
             </div>
@@ -89,42 +89,42 @@ export function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="font-heading text-xl mb-6 text-luxury-gold">Quick Links</h3>
+            <h3 className="font-heading text-xl mb-6 text-brand-green-light font-semibold">Quick Links</h3>
             <ul className="space-y-4">
-              <li><Link href="/about" className="text-[#F8F4EC]/80 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Our Services</Link></li>
-              <li><Link href="/gallery" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Gallery</Link></li>
-              <li><Link href="/contact" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link href="/packages" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Wellness Packages</Link></li>
+              <li><Link href="/about" className="text-white/80 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="text-white/80 hover:text-white transition-colors">Our Services</Link></li>
+              <li><Link href="/gallery" className="text-white/80 hover:text-white transition-colors">Gallery</Link></li>
+              <li><Link href="/contact" className="text-white/80 hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link href="/packages" className="text-white/80 hover:text-white transition-colors">Wellness Packages</Link></li>
             </ul>
           </div>
 
           {/* Column 3: Services */}
           <div>
-            <h3 className="font-heading text-xl mb-6 text-luxury-gold">Treatments</h3>
+            <h3 className="font-heading text-xl mb-6 text-brand-green-light font-semibold">Treatments</h3>
             <ul className="space-y-4">
-              <li><Link href="/services#postnatal" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Postnatal Care</Link></li>
-              <li><Link href="/services#prenatal" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Prenatal Care</Link></li>
-              <li><Link href="/services#rejuvenation" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Women's Rejuvenation</Link></li>
-              <li><Link href="/services#panchakarma" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Panchakarma</Link></li>
-              <li><Link href="/services#pain" className="text-[#F8F4EC]/80 hover:text-white transition-colors">Pain Management</Link></li>
+              <li><Link href="/services#postnatal" className="text-white/80 hover:text-white transition-colors">Postnatal Care</Link></li>
+              <li><Link href="/services#prenatal" className="text-white/80 hover:text-white transition-colors">Prenatal Care</Link></li>
+              <li><Link href="/services#rejuvenation" className="text-white/80 hover:text-white transition-colors">Women's Rejuvenation</Link></li>
+              <li><Link href="/services#panchakarma" className="text-white/80 hover:text-white transition-colors">Panchakarma</Link></li>
+              <li><Link href="/services#pain" className="text-white/80 hover:text-white transition-colors">Pain Management</Link></li>
             </ul>
           </div>
 
           {/* Column 4: Contact */}
           <div>
-            <h3 className="font-heading text-xl mb-6 text-luxury-gold">Contact</h3>
+            <h3 className="font-heading text-xl mb-6 text-brand-green-light font-semibold">Contact</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-[#F8F4EC]/80">
-                <MapPin size={20} className="text-luxury-gold shrink-0 mt-1" />
+              <li className="flex items-start gap-3 text-white/80">
+                <MapPin size={20} className="text-brand-green shrink-0 mt-1" />
                 <span>123 Ayurveda Marg, Wellness Valley, Kerala, India 680001</span>
               </li>
-              <li className="flex items-center gap-3 text-[#F8F4EC]/80">
-                <Phone size={20} className="text-luxury-gold shrink-0" />
+              <li className="flex items-center gap-3 text-white/80">
+                <Phone size={20} className="text-brand-green shrink-0" />
                 <span>+91 98765 43210</span>
               </li>
-              <li className="flex items-center gap-3 text-[#F8F4EC]/80">
-                <Mail size={20} className="text-luxury-gold shrink-0" />
+              <li className="flex items-center gap-3 text-white/80">
+                <Mail size={20} className="text-brand-green shrink-0" />
                 <span>healing@punarjani.com</span>
               </li>
             </ul>
@@ -132,7 +132,7 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-[#F8F4EC]/60">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-white/60">
           <p>© {new Date().getFullYear()} Punarjani Matrutwam. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>

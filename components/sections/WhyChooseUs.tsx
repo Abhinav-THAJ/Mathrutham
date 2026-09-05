@@ -34,13 +34,13 @@ export function WhyChooseUs() {
     <section className="py-24 bg-accent relative">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-luxury-gold font-medium uppercase tracking-widest text-sm mb-4 block">
+          <span className="text-brand-green font-semibold uppercase tracking-widest text-sm mb-4 block">
             The Punarjani Difference
           </span>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-[#1A2E1A] mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
             Why Choose Us
           </h2>
-          <p className="text-foreground/70 text-lg">
+          <p className="text-foreground/75 text-lg">
             We blend the profound science of Ayurveda with the luxurious comfort of a premium wellness retreat to offer an unparalleled healing experience.
           </p>
         </div>
@@ -56,12 +56,14 @@ export function WhyChooseUs() {
             <motion.div
               key={i}
               variants={itemVariants}
-              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-primary/5 hover:-translate-y-2 group"
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-primary/10 hover:border-primary/30 hover:-translate-y-2 group"
             >
-              <div className="w-14 h-14 bg-secondary rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 ${
+                i % 2 === 0 ? "bg-secondary text-brand-green" : "bg-[#F7EFF9] text-primary"
+              }`}>
                 <item.icon size={28} strokeWidth={1.5} />
               </div>
-              <h3 className="font-heading text-xl font-bold text-[#1A2E1A] mb-3">
+              <h3 className="font-heading text-xl font-bold text-foreground mb-3">
                 {item.title}
               </h3>
               <p className="text-foreground/70 text-sm leading-relaxed">

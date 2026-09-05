@@ -15,7 +15,7 @@ export function FinalCTA() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#1A2E1A]/80 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-[#2B1230]/85 backdrop-blur-[2px]" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-8 text-center max-w-4xl">
@@ -25,20 +25,20 @@ export function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-luxury-gold font-medium uppercase tracking-widest text-sm mb-6 block">
+          <span className="text-secondary font-semibold uppercase tracking-widest text-sm mb-6 block">
             Your Wellness Awaits
           </span>
           <h2 className="font-heading text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
             Begin Your Healing Journey Today
           </h2>
-          <p className="text-[#F8F4EC]/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed font-light">
             Experience the transformative power of authentic Ayurveda. Schedule your consultation with our expert physicians.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-luxury-gold px-10 py-5 text-lg font-semibold text-[#1A2E1A] shadow-xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-primary to-brand-green px-10 py-5 text-lg font-semibold text-white shadow-2xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto hover:brightness-110"
             >
               <Calendar size={22} className="group-hover:animate-bounce" />
               Book Consultation
