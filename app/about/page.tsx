@@ -19,12 +19,15 @@ export default function AboutPage() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl">
           <div className="bg-white border border-primary/15 rounded-3xl p-8 md:p-12 shadow-xl">
-            <h2 className="font-heading text-3xl font-bold text-foreground mb-6">Our Philosophy</h2>
-            <p className="text-foreground/80 leading-relaxed mb-6">
-              At Punarjani Matrutwam, we believe in the profound wisdom of Ayurveda to nurture life. Our retreat is designed not as a hospital, but as a premium wellness sanctuary where traditional healing meets modern luxury.
+            <h2 className="font-heading text-3xl font-bold text-foreground mb-6">About Us</h2>
+            <p className="text-foreground/80 leading-relaxed mb-6 text-justify">
+              At Punarjani Matrutwam, we believe that motherhood is a sacred journey that deserves the utmost care, respect, and nurturing. Rooted in the timeless wisdom of Ayurveda, we specialize in postnatal care (Prasava Raksha) that helps mothers recover, rejuvenate, and reconnect with their inner strength.
             </p>
-            <p className="text-foreground/80 leading-relaxed">
-              Every detail of our center, from the organic herbs used in our therapies to the tranquil environment, is curated to help you disconnect from stress and reconnect with your natural state of balance.
+            <p className="text-foreground/80 leading-relaxed mb-6 text-justify">
+              Our therapies are designed to support physical healing, emotional balance, and overall well-being during the delicate postpartum phase. With personalized treatments, experienced therapists, and a calming environment, we ensure that every mother feels cared for, valued, and empowered.
+            </p>
+            <p className="text-foreground/80 leading-relaxed text-justify">
+              At Punarjani Matrutwam, we don’t just offer treatments—we create a space where mothers are reborn with strength and vitality.
             </p>
           </div>
         </div>

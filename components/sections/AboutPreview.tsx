@@ -63,11 +63,11 @@ export function AboutPreview() {
               A Sanctuary for Mother & Child Wellness
             </h2>
             <div className="space-y-6 text-foreground/80 leading-relaxed text-lg mb-10">
-              <p>
-                At Punarjani Matrutwam, we believe in the profound wisdom of Ayurveda to nurture life. Our retreat is designed not as a hospital, but as a premium wellness sanctuary where traditional healing meets modern luxury.
+              <p className="text-justify">
+                At Punarjani Matrutwam, we believe that motherhood is a sacred journey that deserves the utmost care, respect, and nurturing. Rooted in the timeless wisdom of Ayurveda, we specialize in postnatal care (Prasava Raksha) that helps mothers recover, rejuvenate, and reconnect with their inner strength.
               </p>
-              <p>
-                From specialized Prasava Raksha (Postnatal Care) to comprehensive women's rejuvenation, every treatment is personalized, utilizing authentic herbs and oils prepared in-house following ancient scriptures.
+              <p className="text-justify">
+                Our therapies are designed to support physical healing, emotional balance, and overall well-being during the delicate postpartum phase. With personalized treatments, experienced therapists, and a calming environment, we ensure that every mother feels cared for, valued, and empowered.
               </p>
             </div>
 

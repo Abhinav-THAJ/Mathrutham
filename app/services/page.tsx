@@ -2,13 +2,77 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Leaf, Heart, Baby, Eye, BrainCircuit } from "lucide-react";
 
 const services = [
-  { id: "postnatal", icon: Baby, title: "Postnatal Care (Prasava Raksha)", desc: "Gentle therapies designed to help mothers recover strength and vitality after childbirth." },
-  { id: "prenatal", icon: Heart, title: "Prenatal Care", desc: "Nourishing therapies to prepare the body and mind for a smooth and healthy delivery." },
-  { id: "rejuvenation", icon: Leaf, title: "Women's Rejuvenation", desc: "Holistic wellness therapies for women of all ages to restore balance." },
-  { id: "panchakarma", icon: Leaf, title: "Panchakarma", desc: "The ultimate Ayurvedic detoxification and purification therapy." },
-  { id: "pain", icon: BrainCircuit, title: "Pain Management", desc: "Targeted natural relief for chronic pain and joint issues." },
-  { id: "stress", icon: BrainCircuit, title: "Stress Management", desc: "Calming therapies to soothe the nervous system and relieve anxiety." },
-  { id: "eye", icon: Eye, title: "Eye Wellness", desc: "Traditional Netra therapies to improve vision and eye health." },
+  { 
+    id: "postnatal", 
+    icon: Baby, 
+    title: "Postnatal Care (Prasava Raksha)", 
+    desc: "Holistic Ayurvedic care designed for mothers after delivery to restore strength, balance hormones, and support recovery.",
+    includes: ["Abhyanga (Full Body Massage)", "Kati & Udarabandhana (Abdominal care)", "Herbal Steam Bath", "Kashaya & Diet Guidance", "Baby Care Support"]
+  },
+  { 
+    id: "prenatal", 
+    icon: Heart, 
+    title: "Prenatal Treatment", 
+    desc: "Nourishing therapies to prepare the body and mind for a smooth and healthy delivery." 
+  },
+  { 
+    id: "rejuvenation", 
+    icon: Leaf, 
+    title: "Women Rejuvenation Therapy", 
+    desc: "Special therapies to relax, detoxify, and rejuvenate women at any stage of life.",
+    includes: ["Abhyanga", "Shirodhara", "Facial Ayurvedic", "Netra Care (Eye Therapy)"]
+  },
+  { 
+    id: "abhyangam", 
+    icon: Heart, 
+    title: "Abhyangam (Full Body Massage)", 
+    desc: "A deeply relaxing Ayurvedic oil massage that improves circulation, relieves stress, and nourishes the body.",
+    includes: ["Body Massage", "Head Massage", "Steam Bath", "Kesha Dhoopanam", "Anjanam"]
+  },
+  { 
+    id: "herbal-therapies", 
+    icon: Leaf, 
+    title: "Herbal Therapies & Add-ons", 
+    desc: "Enhance your healing experience with traditional Ayurvedic practices.",
+    includes: ["Dhoomapana (Herbal Smoke Therapy)", "Kesha Dhoopanam (Hair Fumigation)", "Anjanam (Eye Care)", "Herbal Face Packs"]
+  },
+  { 
+    id: "newborn-care", 
+    icon: Baby, 
+    title: "Newborn Care Guidance", 
+    desc: "Gentle and safe traditional care guidance for your baby.",
+    includes: ["Baby Massage Techniques", "Bathing Guidance", "Sleep & Feeding Support"]
+  },
+  { 
+    id: "diet", 
+    icon: Leaf, 
+    title: "Ayurvedic Diet & Lifestyle", 
+    desc: "Personalized diet plans and lifestyle practices to support recovery and long-term wellness." 
+  },
+  { 
+    id: "panchakarma", 
+    icon: Leaf, 
+    title: "Panchakarma Treatment", 
+    desc: "The ultimate Ayurvedic detoxification and purification therapy." 
+  },
+  { 
+    id: "pain", 
+    icon: BrainCircuit, 
+    title: "Pain Management", 
+    desc: "Targeted natural relief for chronic pain and joint issues." 
+  },
+  { 
+    id: "stress", 
+    icon: BrainCircuit, 
+    title: "Stress Management", 
+    desc: "Calming therapies to soothe the nervous system and relieve anxiety." 
+  },
+  { 
+    id: "eye", 
+    icon: Eye, 
+    title: "Eye Wellness", 
+    desc: "Traditional Netra therapies to improve vision and eye health." 
+  },
 ];
 
 export default function ServicesPage() {
@@ -37,7 +101,17 @@ export default function ServicesPage() {
                   <svc.icon size={32} strokeWidth={1.5} />
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-foreground mb-4">{svc.title}</h3>
-                <p className="text-foreground/70 mb-6">{svc.desc}</p>
+                <p className="text-foreground/70 mb-4">{svc.desc}</p>
+                {svc.includes && (
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-sm text-brand-green uppercase tracking-wider mb-2">Includes:</h4>
+                    <ul className="list-disc list-inside text-foreground/80 space-y-1 text-sm">
+                      {svc.includes.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 <a href="/contact" className="text-brand-green font-semibold uppercase text-sm tracking-wider hover:text-primary transition-colors inline-flex items-center gap-1">
                   Learn More &rarr;
                 </a>

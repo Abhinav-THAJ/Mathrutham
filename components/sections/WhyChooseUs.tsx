@@ -4,14 +4,10 @@ import { motion } from "framer-motion";
 import { Leaf, Heart, Stethoscope, Baby, ShieldCheck, Sprout, Wind, Droplet } from "lucide-react";
 
 const reasons = [
-  { icon: Leaf, title: "Authentic Ayurveda", desc: "Traditional scriptures-based therapies." },
-  { icon: Heart, title: "Personalized Care", desc: "Treatments tailored to your unique body constitution." },
+  { icon: Leaf, title: "Authentic Ayurvedic Practices", desc: "Traditional scriptures-based therapies." },
   { icon: Stethoscope, title: "Experienced Therapists", desc: "Expert healers from Kerala." },
-  { icon: Baby, title: "Mother & Baby Care", desc: "Specialized gentle postnatal care." },
-  { icon: ShieldCheck, title: "Safe Treatments", desc: "100% natural and safe procedures." },
-  { icon: Sprout, title: "Natural Herbs", desc: "Medicines prepared from pristine nature." },
-  { icon: Wind, title: "Peaceful Healing", desc: "Luxury retreat atmosphere." },
-  { icon: Droplet, title: "Hygienic Environment", desc: "Immaculate premium facilities." },
+  { icon: Baby, title: "Mother & Baby Focused Care", desc: "Specialized gentle postnatal care." },
+  { icon: Droplet, title: "Calm, Hygienic Environment", desc: "Immaculate premium facilities." },
 ];
 
 const containerVariants = {
@@ -38,7 +34,7 @@ export function WhyChooseUs() {
             The Punarjani Difference
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Why Choose Us
+            Why Choose Matrutwam?
           </h2>
           <p className="text-foreground/75 text-lg">
             We blend the profound science of Ayurveda with the luxurious comfort of a premium wellness retreat to offer an unparalleled healing experience.

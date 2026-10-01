@@ -117,15 +117,17 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white/80">
                 <MapPin size={20} className="text-brand-green shrink-0 mt-1" />
-                <span>123 Ayurveda Marg, Wellness Valley, Kerala, India 680001</span>
+                <a href="https://maps.app.goo.gl/hKHuBi84nRYitEAa9?g_st=iw" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">
+                  123 Ayurveda Marg, Wellness Valley, Kerala, India 680001
+                </a>
               </li>
               <li className="flex items-center gap-3 text-white/80">
                 <Phone size={20} className="text-brand-green shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 7996444434</span>
               </li>
               <li className="flex items-center gap-3 text-white/80">
                 <Mail size={20} className="text-brand-green shrink-0" />
-                <span>healing@punarjani.com</span>
+                <span>Matrutwam@punarjani.com</span>
               </li>
             </ul>
           </div>

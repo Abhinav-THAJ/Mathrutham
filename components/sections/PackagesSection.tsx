@@ -7,26 +7,23 @@ import { Check } from "lucide-react";
 
 const packages = [
   {
-    title: "7 Days Rejuvenation",
-    price: "₹35,000",
+    title: "7 Days Care",
     desc: "A quick reset for your body and mind with daily therapies.",
-    features: ["Daily Abhyanga", "Shirodhara (3 sessions)", "Herbal Steam Bath", "Consultation"],
+    features: ["Personalized treatments", "Diet included", "Daily Abhyanga", "Shirodhara (3 sessions)"],
     img: "/images/gallery/5.png",
   },
   {
-    title: "14 Days Detox",
-    price: "₹65,000",
-    desc: "Comprehensive cleansing program for deep healing.",
-    features: ["Panchakarma", "Specialized Diet", "Yoga & Meditation", "Daily Doctor Visit"],
+    title: "10 Days Care",
+    desc: "Comprehensive cleansing and recovery program.",
+    features: ["Personalized treatments", "Diet included", "Yoga & Meditation", "Daily Doctor Visit"],
     img: "/images/gallery/6.png",
     popular: true,
   },
   {
-    title: "21 Days Postnatal",
-    price: "₹95,000",
-    desc: "Extensive care designed for mothers and newborns.",
-    features: ["Mother & Baby Massage", "Postpartum Diet", "Medicinal Baths", "24/7 Nursing"],
-    img: "/images/gallery/1.png", // Reusing image 1
+    title: "14 Days Care",
+    desc: "Extensive postnatal care designed for mothers.",
+    features: ["Personalized treatments", "Diet included", "Mother & Baby Massage", "Postpartum Diet"],
+    img: "/images/gallery/1.png",
   }
 ];
 
@@ -69,7 +66,6 @@ export function PackagesSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2B1230]/70 to-transparent" />
                 <div className="absolute bottom-4 left-6 text-white">
                   <h3 className="font-heading text-2xl font-bold">{pkg.title}</h3>
-                  <div className="text-xl font-medium mt-1 text-secondary">{pkg.price}</div>
                 </div>
               </div>
               

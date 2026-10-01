@@ -37,7 +37,7 @@ export function Hero() {
               Book Consultation
             </Link>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917996444434"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white border-2 border-brand-green/30 px-8 py-4 text-base font-semibold text-brand-green shadow-md transition-all hover:border-brand-green hover:bg-brand-green/5 hover:scale-105 active:scale-95"

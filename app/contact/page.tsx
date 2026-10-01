@@ -29,7 +29,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1 text-foreground">Our Location</h4>
-                  <p className="text-foreground/70">123 Ayurveda Marg, Wellness Valley, Kerala, India 680001</p>
+                  <a href="https://maps.app.goo.gl/hKHuBi84nRYitEAa9?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-brand-green transition-colors underline underline-offset-4">
+                    123 Ayurveda Marg, Wellness Valley, Kerala, India 680001
+                  </a>
                 </div>
               </div>
 
@@ -39,7 +41,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1 text-foreground">Phone</h4>
-                  <p className="text-foreground/70">+91 98765 43210</p>
+                  <p className="text-foreground/70">+91 7996444434</p>
                 </div>
               </div>
 
@@ -49,7 +51,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1 text-foreground">Email</h4>
-                  <p className="text-foreground/70">healing@punarjani.com</p>
+                  <p className="text-foreground/70">Matrutwam@punarjani.com</p>
                 </div>
               </div>
 
