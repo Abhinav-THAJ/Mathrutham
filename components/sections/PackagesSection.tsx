@@ -9,7 +9,7 @@ const packages = [
   {
     title: "7 Days Care",
     desc: "A quick reset for your body and mind with daily therapies.",
-    features: ["Personalized treatments", "Diet included", "Daily Abhyanga", "Shirodhara (3 sessions)"],
+    features: ["Personalized treatments", "Diet included", "Daily Abhyanga", "Shirodhara"],
     img: "/images/gallery/5.png",
   },
   {

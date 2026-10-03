@@ -19,9 +19,7 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary text-brand-green font-semibold text-xs uppercase tracking-widest mb-6 border border-brand-green/20">
-            <span>An Ayurvedic Approach to Mother & Child Care</span>
-          </div>
+
           <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground">
             Authentic Ayurvedic Care for Mothers, Women & Families
           </h1>
