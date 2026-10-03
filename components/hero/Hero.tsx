@@ -44,24 +44,6 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-primary/15 pt-8">
-            <div>
-              <p className="text-3xl font-heading font-bold text-brand-green">15+</p>
-              <p className="text-sm text-foreground/70">Years Experience</p>
-            </div>
-            <div>
-              <p className="text-3xl font-heading font-bold text-primary">10k+</p>
-              <p className="text-sm text-foreground/70">Happy Mothers</p>
-            </div>
-            <div>
-              <p className="text-3xl font-heading font-bold text-brand-green">25+</p>
-              <p className="text-sm text-foreground/70">Treatments</p>
-            </div>
-            <div>
-              <p className="text-3xl font-heading font-bold text-primary">99%</p>
-              <p className="text-sm text-foreground/70">Success Rate</p>
-            </div>
-          </div>
         </motion.div>
 
         {/* Right Image */}
