@@ -30,7 +30,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-lg mb-1 text-foreground">Our Location</h4>
                   <a href="https://maps.app.goo.gl/hKHuBi84nRYitEAa9?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-brand-green transition-colors underline underline-offset-4">
-                    123 Ayurveda Marg, Wellness Valley, Kerala, India 680001
+                    No: 22, Temple Bells Layout Rd, Carmelaram, Chikkabellandur, Bengaluru, Karnataka 560035
                   </a>
                 </div>
               </div>

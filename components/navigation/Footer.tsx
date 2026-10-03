@@ -118,7 +118,7 @@ export function Footer() {
               <li className="flex items-start gap-3 text-white/80">
                 <MapPin size={20} className="text-brand-green shrink-0 mt-1" />
                 <a href="https://maps.app.goo.gl/hKHuBi84nRYitEAa9?g_st=iw" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">
-                  123 Ayurveda Marg, Wellness Valley, Kerala, India 680001
+                  No: 22, Temple Bells Layout Rd, Carmelaram, Chikkabellandur, Bengaluru, Karnataka 560035
                 </a>
               </li>
               <li className="flex items-center gap-3 text-white/80">
