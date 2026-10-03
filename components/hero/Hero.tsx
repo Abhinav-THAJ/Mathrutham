@@ -20,7 +20,7 @@ export function Hero() {
           className="max-w-2xl"
         >
 
-          <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
             Authentic Ayurvedic Care for Mothers, Women & Families
           </h1>
           <p className="text-lg text-foreground/80 mb-10 leading-relaxed">
