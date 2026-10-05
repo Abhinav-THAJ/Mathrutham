@@ -1,6 +1,24 @@
+"use client";
+
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { firstName, lastName, email, message } = formData;
+    const text = `New Appointment Request:\n\nName: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}`;
+    const whatsappUrl = `https://wa.me/917996444434?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <>
       <section className="relative pt-32 pb-20 bg-accent text-center">
@@ -69,26 +87,26 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-primary/15">
               <h2 className="font-heading text-3xl font-bold text-foreground mb-8">Book an Appointment</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-foreground/80 mb-2">First Name</label>
-                    <input type="text" className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="John" />
+                    <input type="text" required value={formData.firstName} onChange={(e) => setFormData({...formData, firstName: e.target.value})} className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="John" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground/80 mb-2">Last Name</label>
-                    <input type="text" className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="Doe" />
+                    <input type="text" required value={formData.lastName} onChange={(e) => setFormData({...formData, lastName: e.target.value})} className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="Doe" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground/80 mb-2">Email Address</label>
-                  <input type="email" className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="john@example.com" />
+                  <input type="email" required value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="john@example.com" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground/80 mb-2">Message</label>
-                  <textarea rows={4} className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="How can we help you?"></textarea>
+                  <textarea rows={4} required value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full bg-accent/60 border border-primary/20 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-foreground" placeholder="How can we help you?"></textarea>
                 </div>
-                <button type="button" className="w-full bg-primary text-white font-semibold py-4 rounded-xl shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.01] active:scale-[0.99]">
+                <button type="submit" className="w-full bg-primary text-white font-semibold py-4 rounded-xl shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.01] active:scale-[0.99]">
                   Send Message
                 </button>
               </form>
